@@ -17,7 +17,7 @@ mod util;
 #[doc(include = "../docs/notes-intro.md")]
 mod notes {
     #[doc(include = "../docs/notes-ipp.md")]
-    mod inner_product_proof {}
+    pub mod inner_product_proof {}
     #[doc(include = "../docs/notes-rp.md")]
     mod range_proof {}
     #[doc(include = "../docs/notes-r1cs.md")]
@@ -26,7 +26,7 @@ mod notes {
 
 mod errors;
 mod generators;
-mod inner_product_proof;
+pub mod inner_product_proof;
 mod linear_proof;
 mod range_proof;
 mod transcript;
